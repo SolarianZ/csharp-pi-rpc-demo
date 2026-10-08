@@ -55,3 +55,19 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# ── 本项目追加（上方 GitHub 官方 .NET 模板未覆盖的部分）──
+
+# IDE / 编辑器
+.vscode/
+.idea/
+*.user
+*.suo
+
+# macOS
+.DS_Store
+
+# 运行期产物
+# demo 会把 bootstrap.js 和隔离 agent dir 写到系统临时目录，通常不在仓库内；
+# 这里只防止有人改了路径后把生成物落进仓库。
+bootstrap.js
